@@ -10,12 +10,11 @@
         android:id="@+id/txtVwOlaMundo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Lista de Itens!!!"
+        android:text="Texto que será substituido!"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomecompleto" />
 
     <Button
         android:id="@+id/btnAdd"
@@ -36,5 +35,27 @@
         android:text="sub"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNomecompleto"
+        android:layout_width="347dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEx1"
+        android:layout_width="354dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:text="Ex.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwOlaMundo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

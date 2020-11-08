@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FDAEloyBarbosa">
-        <activity android:name=".FromItemActivity"></activity>
+        <activity android:name=".Ex1Activity"></activity>
+        <activity android:name=".FromItemActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

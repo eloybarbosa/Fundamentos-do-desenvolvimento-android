@@ -3,6 +3,8 @@ package br.ebarbosa.fda_eloybarbosa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_from_item.*
@@ -17,14 +19,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.i("CicloDeVida", "MainAcitovoty OnCreate")
 
+        btnEx1.setOnClickListener {
+            startActivity(Intent(this, Ex1Activity::class.java))
+        }
+
         //var textViewOlaMundo = findViewById<TextView>(R.id.txtVwOlaMundo)
         //btnAcessar.text = "Acessar"
 
         btnSub.setOnClickListener {
             contador--
             txtVwOlaMundo.text = "$contador"
-        }
 
+        }
         btnAdd.setOnClickListener {
             //txtVwOlaMundo.text = "Você me Clicou!!!"
             //actionBtn()
@@ -35,6 +41,25 @@ class MainActivity : AppCompatActivity() {
             )
             toast.show()
         }
+
+
+        editTextNomecompleto.addTextChangedListener(
+                object : TextWatcher{
+                    override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                        //
+                    }
+
+                    override fun onTextChanged(text: CharSequence?, start: Int, before: Int, count: Int) {
+                        txtVwOlaMundo.text  = text
+                    }
+
+                    override fun afterTextChanged(s: Editable?) {
+                        //
+                    }
+
+                }
+        )
+
     }
     override fun onStart() {
         super.onStart()

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ex1Activity">
+
+    <Button
+        android:id="@+id/btnGerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gerar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRandom" />
+
+    <TextView
+        android:id="@+id/textViewRandom"
+        android:layout_width="304dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:hint="Clique no botão para gerar um numero"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnValor04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="actionBtnSeleionaDados"
+        android:text="04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGerar" />
+
+    <Button
+        android:id="@+id/btnValor10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="actionBtnSeleionaDados"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/btnValor04"
+        app:layout_constraintTop_toBottomOf="@+id/btnGerar" />
+
+    <Button
+        android:id="@+id/btnValor20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="actionBtnSeleionaDados"
+        android:text="20"
+        app:layout_constraintStart_toEndOf="@+id/btnValor10"
+        app:layout_constraintTop_toBottomOf="@+id/btnGerar" />
+
+    <Button
+        android:id="@+id/btnValor30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="actionBtnSeleionaDados"
+        android:text="30"
+        app:layout_constraintStart_toEndOf="@+id/btnValor20"
+        app:layout_constraintTop_toBottomOf="@+id/btnGerar" />
+
+    <TextView
+        android:id="@+id/textViewHistorico"
+        android:layout_width="173dp"
+        android:layout_height="507dp"
+        android:hint="textViewHistorico"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnValor20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
